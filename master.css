@@ -1,11 +1,98 @@
-a.navbar-brand img{
-  height: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+  font-weight: 600;
+}
+
+col-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+a.navbar-brand img {
+  height: 40px;
 }
 
 .container {
   max-width: 1250px;
 }
 
-nav.navbar{
+nav.navbar {
+  background-color: white;
   height: 88px;
+}
+
+ul.navbar-nav li a {
+  font-size: 18px;
+  color: #C6C7C8;
+}
+
+ul.dropdown-menu {
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px #aaaaaa;
+}
+
+div.dropdown-menu {
+  width: 740px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px #aaaaaa;
+}
+
+div.dropdown-menu[data-bs-popper] {
+  left: -250px;
+}
+
+li.dropdown {
+  margin: 0Spx;
+}
+
+.dropdown-menu .row {
+  width: 577px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.dropdown-menu p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dropdown-menu p i {
+  margin-right: 5px;
+}
+
+.dropdown-menu ul {
+  padding: 0;
+  width: 100px;
+  display: inline-block;
+}
+
+.dropdown-menu ul li {
+  display: inline-block;
+}
+
+/* Bootstrap class */
+.btn {
+  background-color: #F0F0F0;
+  border: none;
+  border-radius: 10px !important;
+  font-weight: 600;
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
+/* utilities */
+.dark {
+  background-color: #191C1F;
 }
