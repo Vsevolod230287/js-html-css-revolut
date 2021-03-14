@@ -9,15 +9,16 @@ body {
   font-weight: 600;
 }
 
-col-3 {
-  display: flex;
-  justify-content: space-between;
-}
-
 a.navbar-brand img {
   height: 40px;
 }
+a.nav-link {
+  font-size: 20px;
+}
 
+a.nav-link:hover {
+  color: black!important;
+}
 .container {
   max-width: 1250px;
 }
@@ -27,130 +28,138 @@ nav.navbar {
   height: 88px;
 }
 
-.both-leave-enter {
+/* collapse */
+.row {
+  box-shadow: 5px 10px 8px #888888;
+  border-radius: 10px;
+  justify-content: space-around;
   display: flex;
-  align-items: center;
-}
-
-ul.navbar-nav li a {
-  margin-right: 20px;
-  font-size: 18px;
-}
-
-ul.dropdown-menu {
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px 0px #aaaaaa;
-}
-
-div.dropdown-menu.a {
-  width: 800px;
-  padding: 0;
-  margin: 0;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px 0px #aaaaaa;
-}
-
-div.row.a {
-  width: 100%;
-}
-
-div.dropdown-menu[data-bs-popper] {
-  left: -310px;
-}
-
-li a.dropdown-item span {
-  top: -13px;
-  left: -10px;
-  position: relative;
-  color: #041730;
-  font-size: 9px;
-}
-
-.dropdown-menu .row {
-  width: 577px;
-  height: 300px;
-  border-radius: 10px;
-}
-
-.dropdown-menu p {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.dropdown-menu p i {
-  margin-right: 5px;
-}
-
-.dropdown-menu ul {
-  padding: 0;
-  width: 100px;
-  display: inline-block;
-}
-
-.dropdown-menu ul li {
-  display: inline-block;
-}
-
-.my-features a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.55);
-}
-
-.my-features a:hover {}
-
-.my-dropdown {
-  background-color: white;
+  background: white;
+  display: none;
   position: absolute;
   width: 800px;
-  right: 60px;
-  top: 66px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px 0px #aaaaaa;
-  display: none;
+  top: 63px;
+  right: 79px;
 }
 
-.my-dropdown ul li a {
+.col-3 p:hover {
+  color: black;
+}
+
+.col-3 p {
+  font-weight: 700;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #755757;
+}
+
+.col-3 a {
   text-decoration: none;
+  color: #A6AEB5;
+  margin-bottom: 10px;
+  display: block;
 }
 
-.my-dropdown ul {
-  list-style: none;
+.col-3 a:hover {
+  color: black;
 }
 
-/* Bootstrap class */
-.my-btn {
-  background-color: #F0F0F0;
-  border: none;
-  border-radius: 10px !important;
-  font-weight: 600;
-  padding: 0 23px;
-}
-
-.my-btn:hover {
-  color: #212529;
-  background-color: rgba(240, 240, 240, 0.5)
-}
-
-.my-btn-dark {
-  background-color: #212529;
-  border: none;
-  border-radius: 10px !important;
-  font-weight: 600;
-}
-
-.my-btn-dark:hover {
-  background-color: rgba(33, 37, 41, 0.8)
-}
-
-.bg-light {
-  background-color: white !important;
-}
-
-/* utilities */
-.dark {
-  background-color: #191C1F;
+.col-3 i {
+  margin-right: 9px;
 }
 
 .active {
-  display: block;
+  display: flex;
+}
+
+/* -------------------- */
+a.title {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.55);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+a.title:hover {
+  color: black;
+}
+
+.col.about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.row.plans {
+  right: 290px;
+}
+
+.row.help {
+  right: 145px;
+}
+
+.row.about-us {
+  right: 233px;
+}
+
+.col.plans {
+  display: flex;
+  flex-direction: column;
+}
+
+.col.plans a,
+div.features a,
+.col.about-us a,
+.col.help a {
+  color: #A6AEB5;
+  text-decoration: none;
+}
+
+.col.help a:hover {
+  color: black;
+}
+
+.col.about-us a:hover {
+  color: black;
+}
+
+.col.plans a:hover {
+  color: black;
+}
+
+.col.help {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row.about-us,
+.row.help,
+.row.plans {
+  width: 200px;
+}
+
+span.saving-vaults {
+  position: absolute;
+  top: 150px;
+  left: 310px;
+  font-size: 8px;
+}
+
+span.saving-vaults:hover {
+  color: black;
+}
+
+.my-btn {
+  padding: 6px 20px;
+  border-radius: 10px !important;
+  background-color: lightblue;
+}
+
+.my-btn-dark {
+    padding: 6px 17px;
+  border-radius: 10px !important;
+}
+
+.my-btn-dark:hover {
+  background-color: #198754;
 }
