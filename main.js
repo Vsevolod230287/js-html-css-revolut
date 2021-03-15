@@ -17,9 +17,11 @@ function mouseEnter() {
 
 function mouseLeave() {
   var myCard = $('.row');
-
-  myCard.mouseleave(function() {
+  var enter = $('.enter');
+  enter.mouseleave(function() {
+    enter.removeClass('active');
     myCard.removeClass('active');
+
 
   });
 };

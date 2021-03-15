@@ -12,13 +12,15 @@ body {
 a.navbar-brand img {
   height: 40px;
 }
+
 a.nav-link {
   font-size: 20px;
 }
 
 a.nav-link:hover {
-  color: black!important;
+  color: black !important;
 }
+
 .container {
   max-width: 1250px;
 }
@@ -90,18 +92,19 @@ a.title:hover {
 }
 
 .row.plans {
-  right: 290px;
+  right: 363px;
 }
 
 .row.help {
-  right: 145px;
+  right: 189px;
 }
 
 .row.about-us {
-  right: 233px;
+  right: 292px;
 }
 
 .col.plans {
+  right: 363px;
   display: flex;
   flex-direction: column;
 }
@@ -156,10 +159,16 @@ span.saving-vaults:hover {
 }
 
 .my-btn-dark {
-    padding: 6px 17px;
+  padding: 6px 17px;
   border-radius: 10px !important;
 }
 
 .my-btn-dark:hover {
   background-color: #198754;
+}
+
+.enter {
+  display: flex;
+  align-items: center;
+  height: 80px;
 }
